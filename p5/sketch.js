@@ -6,10 +6,10 @@ function setup() {
 
 function draw() {
 	// place your drawing code here
-	noCursor();
+	//noCursor();
 	background(200,10);
-	smooth();
-	/*fill("#afaff1");
+	/*smooth();
+	fill("#afaff1");
 	ellipse(width/2,height/2,300,300);
     rect(width/2,0,100,100,10);
     triangle(400,200,100,500,40,30);
@@ -21,7 +21,7 @@ function draw() {
 	strokeWeight(10);
 	stroke("red");
 	point(mouseX,mouseY);
-	//new_curve();*/
+	new_curve();*/
 	rotateX(frameCount * 0.2);
     rotateZ(frameCount * 0.01);
     cylinder(200, 200);
