@@ -8,8 +8,6 @@ function setup() {
 
 function draw() {
 	// place your drawing code here
-	
-	noCursor();
 	background(200);
 	smooth();
 	mycomposition();
@@ -18,10 +16,11 @@ function draw() {
 	stroke(35,164,200);
 	line(0,mouseY,width,mouseY);
 	line(mouseX,0,mouseX,height);*/
-    //mywindow();
+    mywindow();
 }
 
 function mywindow(){
+	noCursor();
 	rectMode(CORNER);
 	winSize = width/20;
 	left = mouseX-winSize;
