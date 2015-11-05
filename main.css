@@ -8,6 +8,7 @@ body{
     margin-left:auto;
     margin-right:auto;
     width: 800px;
+    font-size: 1em;
     font-family: courier;
 }
 
@@ -28,6 +29,6 @@ hr{
 @media screen and (max-width: 1000px) {
     body{
         width:95%;
+        font-size: 2em;
     }
-    
 }

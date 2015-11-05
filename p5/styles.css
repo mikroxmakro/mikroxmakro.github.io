@@ -22,3 +22,9 @@ a:hover {
 	background-color: #33CCCC;
 	color:#66ff99;
 }
+
+@media screen and (max-width: 1000px) {
+    body{
+        font-size: 2em;
+    }
+}
