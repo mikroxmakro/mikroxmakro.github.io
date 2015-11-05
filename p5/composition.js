@@ -18,19 +18,19 @@ function draw() {
 	stroke(35,164,200);
 	line(0,mouseY,width,mouseY);
 	line(mouseX,0,mouseX,height);*/
-    mywindow();
+    //mywindow();
 }
 
 function mywindow(){
 	rectMode(CORNER);
-	winSize = 10;
+	winSize = width/20;
 	left = mouseX-winSize;
 	right = mouseX+winSize;
 	up = mouseY-winSize;
 	down = mouseY+winSize;
 	
 	fill(255);
-	noStroke();
+	stroke(255);
 	rect(0,0,left,height);
 	rect(right,0,width-right,height);
 	rect(left,0,right-left,up);
