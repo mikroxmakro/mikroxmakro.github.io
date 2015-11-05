@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    width: 800px;
+    font-family: courier;
+}
+
+#big_wrapper{
+    text-align: left;
+}
+
+h1 {
+    margin-top: 15%;
+    color: rgb(35,164,200);
+}
+
+hr{
+    margin-top:5%;
+    margin-bottom:5%;
+}
