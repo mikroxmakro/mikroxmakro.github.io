@@ -3,12 +3,16 @@ var t_y = height;
 var t_x = width*0.8;
 var xpos, ypos, r;
 var c;
+var ellipseX, ellipseY, ellipseSize, rectX, rectY, rectSize;
 	
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	xpos = random(width);
 	ypos = random(height);
 	c = new Artifact();
+	ellipseX = width/2;
+	ellipseY = height/2;
+	ellipseSize = 300;
 }
 
 function draw() {
@@ -23,7 +27,7 @@ function draw() {
 	stroke(35,164,200);
 	line(0,mouseY,width,mouseY);
 	line(mouseX,0,mouseX,height);*/
-    //mywindow();
+    mywindow();
 }
 
 function mywindow(){
@@ -47,9 +51,20 @@ function mycomposition() {
     strokeWeight(3);
 	stroke("#809aaa");
 	fill("#527A7A");
-	ellipse(width/2,height/2,300,300);
+	//randomize(2,1,ellipseX,ellipseY,ellipseSize);
+	if(millis()%2==1){
+		ellipseX = random(width);
+		ellipseY = random(height);
+		ellipseSize = random(30,300);
+	}
+	ellipse(ellipseX,ellipseY,ellipseSize,ellipseSize);
 	fill("#af3aa1");
-	rect(width/2,0,100,100);
+	if(millis()%4==2){
+		rectX = random(width);
+		rectY = random(height);
+		rectSize = random(10,100);
+	}
+	rect(rectX,rectY,rectSize,rectSize);
 	fill("#FFFF9C");
     triangle(50,20,100,150,40,130);
     fill("#82FFFF");
@@ -87,7 +102,15 @@ function mycomposition() {
 function windowResized() {
 	resizeCanvas(windowWidth, windowHeight);
 }
-
+/*
+function randomize(var m, var rest, var objX, var objY, objSize){
+	if(millis()%m==rest){
+		objX = random(width);
+		objY = random(height);
+		objSize = random(30,300);
+	}
+}
+*/
 function Artifact() {
 	var size;
 	
@@ -99,6 +122,7 @@ function Artifact() {
 	};
 
 	this.movingCircle = function(){
+		applyMatrix();
 		var t = new Date();
 		var m = t.getMilliseconds();
 		if(m%3==2){
@@ -109,6 +133,6 @@ function Artifact() {
 		translate(xpos,ypos);
 		rotate(r);
 		ellipse(0,0,size,size);
-		console.log(m%13);
+		resetMatrix();
 	};
 }
