@@ -1,9 +1,14 @@
 var winSize, left, right, up, down;
 var t_y = height;
 var t_x = width*0.8;
+var xpos, ypos, r;
+var c;
 	
 function setup() {
 	createCanvas(windowWidth, windowHeight);
+	xpos = random(width);
+	ypos = random(height);
+	c = new Artifact();
 }
 
 function draw() {
@@ -11,12 +16,14 @@ function draw() {
 	background(200);
 	smooth();
 	mycomposition();
+	c.display();
+	c.movingCircle();
     
 	/*strokeWeight(2);
 	stroke(35,164,200);
 	line(0,mouseY,width,mouseY);
 	line(mouseX,0,mouseX,height);*/
-    mywindow();
+    //mywindow();
 }
 
 function mywindow(){
@@ -81,3 +88,27 @@ function windowResized() {
 	resizeCanvas(windowWidth, windowHeight);
 }
 
+function Artifact() {
+	var size;
+	
+	this.display = function(){
+		noFill();
+		strokeWeight(1);
+		stroke(23,25,135);
+		size = 30;
+	};
+
+	this.movingCircle = function(){
+		var t = new Date();
+		var m = t.getMilliseconds();
+		if(m%3==2){
+			r = noise(-TWO_PI,TWO_PI);
+			xpos = xpos + random(-1.5,1.5);
+			ypos = ypos + random(-1.5,1.5);
+		}	
+		translate(xpos,ypos);
+		rotate(r);
+		ellipse(0,0,size,size);
+		console.log(m%13);
+	};
+}
