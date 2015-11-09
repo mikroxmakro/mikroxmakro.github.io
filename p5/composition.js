@@ -13,6 +13,8 @@ function setup() {
 	ellipseX = width/2;
 	ellipseY = height/2;
 	ellipseSize = 300;
+	mouseX = width/2;
+	mouseY = height/2;
 }
 
 function draw() {
