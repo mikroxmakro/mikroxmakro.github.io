@@ -3,7 +3,7 @@ var a,b,maxValue,minValue;
 
 function setup() {
 	cvs3d = createCanvas(windowWidth-18, 100, WEBGL);
-	cvs3d.position(0,122);
+	cvs3d.position(0,54);
 	cvs3d.id("header-animation");
 	a = 200;
 	b = 200;

@@ -5,8 +5,8 @@
 body {
 	height: auto;
 	text-align:center;
-	font-family: Tahoma, Verdana, Segoe, sans-serif;
-	background:#E1EEF3;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	background:white;
 }
 
 #big_wrapper{
@@ -29,10 +29,9 @@ a{
 }
 
 p {
-	color:#5e99f7;
+	color:#006491;
 	line-height: 1.5em;
-	background:white;
-	padding: 20px;
+	padding: 20px 0px;
 	margin-top: 2%;
 	margin-bottom: 3%;
 	
@@ -69,6 +68,16 @@ header{
 	background: #5e99f7;
 	width: 100%;
 	text-align:left;
+}
+
+.centerbox{
+	display:flex;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+
+.spaceup{
+	margin-top: 80px;
 }
 
 #headerimage{
@@ -151,10 +160,14 @@ header{
 }
 
 #logo{
-	padding: 20px;
-	width: 80px;
-	height:80px;
+	padding: 10px 20px;
+	width: 34px;
+	height:34px;
 	cursor:pointer;
+}
+
+#logo-wm{
+	height: 48px;
 }
 
 #menu-responsive{
@@ -185,6 +198,10 @@ header{
 
 .sub_header_image img{
 	width: 100%;
+}
+
+.fa{
+	color: #006491;
 }
 
 @media screen and (max-width: 1000px) {
@@ -224,6 +241,7 @@ header{
 	margin-top: 2%;
 	margin-bottom: 3%;
 	}
+	
 	
 	.bt_menu{
 	display:none;
