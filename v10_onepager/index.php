@@ -34,14 +34,17 @@
             <div style="width:140px;"><i class="fa fa-rocket fa-5x"></i><h2>Schnell</h2><h4>Schnelle und kostenfreie Beratung</h4></div>
             <div style="width:140px;"><i class="fa fa-chain-broken fa-5x"></i><h2>Unverbindlich</h2><h4>Jede Anfrage ist volkommen unverbindlich</h4></div>
             <div style="width:140px;"><i class="fa fa-envelope-o fa-5x"></i><h2>Einfach</h2><h4>Eine kurze Nachricht und los gehts</h4></div>
-
         </div>
+        
+        <aside class="centerbox-left kontakt-bg spaceup">
+            <div>
+            </div>
+        <div><?php include("kontaktseite.php") ?></div>
+        </aside>
         
         
         </section>
-   
     </div> <!-- Ende Big Wrapper-->
-         <?php include("kontaktseite.php") ?>
         <div class="grey spaceup">
         <?php include("impressum.php") ?>
         </div>

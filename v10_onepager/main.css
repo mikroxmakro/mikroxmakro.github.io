@@ -83,8 +83,22 @@ header{
     margin: 0px auto;
 }
 
+.centerbox-left{
+	text-align: left;
+	display:flex;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+
 .spaceup{
 	margin-top: 80px;
+}
+
+.kontakt-bg{
+	background-image: url("/v10_onepager/pics/arbeitsproben/freie-animationen/Veraenderung_PassenderKontext.gif");
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position:  center;
 }
 
 #headerimage{
