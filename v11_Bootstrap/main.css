@@ -131,9 +131,21 @@ header{
 .fa{
 	color: #006491;
 }
-@media screen and (min-width: 1000px) {
+a#email {
+    word-break: break-all;
+}
+
+
+@media screen and (min-width: 768px) {
+		#logo-wm{
+		display: block;
+		height: 2.5em;
+		margin: 0.5em;
+	}
+}
+@media screen and (min-width: 992px) {
 	#big_wrapper{
-		width:1000px;
+		width:992px;
 		height:auto;
 		margin-left:auto;
 		margin-right:auto;
@@ -143,14 +155,6 @@ header{
 		line-height: 1.5em;
 		padding: 20px 0px;
 		margin-top: 2%;
-	}
-	#logo-wm{
-		display: block;
-		height: 2.5em;
-		margin: 0.5em;
-	}
-		.bt_menu{
-	display:none;
 	}
 
 	#gototop {
@@ -172,7 +176,7 @@ header{
 	}
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1200px) {
 	
 	#headerimage{
 		background: center no-repeat url("pics/header_1600x100.jpg");

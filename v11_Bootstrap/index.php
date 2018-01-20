@@ -15,6 +15,9 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/css/mdb.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/js/mdb.min.js"></script>  
+        <script type="text/javascript" src="js/mbd-animation.js"></script>
     </head>
     <body>
     <i id="gototop" class="fa fa-arrow-circle-up fa-4x" aria-hidden="true"></i>
@@ -30,17 +33,18 @@
   <img class="mySlides w3-animate-fading" src="pics/startseite/druck_header_flyer2.jpg" style="width:100%">
   <img class="mySlides w3-animate-fading" src="pics/startseite/druck_header_logoentwicklung.jpg" style="width:100%">
 </div>
-        <p>Mikromalmakro verfolgt das Ziel ihr persönliches Kreativ-Unternehmen zu sein. Wir sind keine Agentur, sondern die Zusammenkuft mehrerer Freelancer. 
-        Das Team besteht aus Grafiker, Fotografen und Programmierer. Zu unseren Kunden zählen unter anderem für »Monster Worldwide«, »Skubch&Co.«, »Karmalove« und »Kleines Kleid«. 
-        Eine Besonderheit von Mikromalmakro ist, dass es nicht nur Projekte umsetzt, sondern auch diverse Schulungen anbieten kann. 
-        »Karmalove« hatte anfangs ein Interesse an einer Photoshop-Schulung und dann durch mangelde Zeit auf die klassische Projekt-Umsetzung umgestiegen. 
+        <p class="animated fadeInUp" id="text1">Mikromalmakro verfolgt das Ziel ihr persönliches Kreativ-Unternehmen zu sein. Wir sind keine Agentur, 
+        sondern die Zusammenkuft mehrerer Freelancer. Das Team besteht aus Grafiker, Fotografen und Programmierer. 
+        Zu unseren Kunden zählen »Monster Worldwide«, »Skubch&Co.«, »Karmalove« und »Kleines Kleid«. Eine Besonderheit von Mikromalmakro ist, 
+        dass es nicht nur Projekte umsetzt, sondern auch diverse Schulungen anbieten kann. 
+        »Karmalove« hatte anfangs ein Interesse an einer Photoshop-Schulung und dann durch mangelde Zeit auf die klassische Projekt-Umsetzung umgestiegen.
         »Kleines Kleid« hat dagegen zwei angestellte im Bereich Produktfotografie schulen lassen und die Sache selbst in die Hand genommen.</p> 
         
         <div class="container-fluid pt-5">
             <div class="row">
-                <div class="col-sm-4 text-center pb-5"><i class="fa fa-rocket fa-4x"></i><h2>Schnell</h2><h4>Schnelle und kostenfreie Beratung</h4></div>
-                <div class="col-sm-4 text-center pb-5"><i class="fa fa-chain-broken fa-4x"></i><h2>Unverbindlich</h2><h4>Jede Anfrage ist volkommen unverbindlich</h4></div>
-                <div class="col-sm-4 text-center pb-3"><i class="fa fa-envelope-o fa-4x"></i><h2>Einfach</h2><h4>Eine kurze Nachricht und los gehts</h4></div>
+                <div class="col-sm-4 text-center pb-5"><i class="fa fa-rocket fa-4x animated fadeInLeftBig" id="icon1"></i><h2 class="animated fadeIn">Schnell</h2><h4 class="animated fadeIn">Schnelle und kostenfreie Beratung</h4></div>
+                <div class="col-sm-4 text-center pb-5"><i class="fa fa-chain-broken fa-4x animated zoomIn" id="icon2"></i><h2>Unverbindlich</h2><h4>Jede Anfrage ist volkommen unverbindlich</h4></div>
+                <div class="col-sm-4 text-center pb-3"><i class="fa fa-envelope-o fa-4x animated rollIn" id="icon3"></i><h2>Einfach</h2><h4>Eine kurze Nachricht und los gehts</h4></div>
             </div>        </div>
         
         <aside class="centerbox-left kontakt-bg spaceup">
@@ -48,8 +52,7 @@
             </div>
         <div><?php include("kontaktseite.php") ?></div>
         </aside>
-        
-        
+        <!--<img class="wow rollIn" src="pics/startseite/druck_header_logoentwicklung.jpg" />-->
         </section>
     </div> <!-- Ende Big Wrapper-->
         <div class="grey spaceup">
