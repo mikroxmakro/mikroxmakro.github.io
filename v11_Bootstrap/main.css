@@ -110,7 +110,7 @@ header{
 }
 
 .kontakt-bg{
-	background-image: url("/v10_onepager/pics/arbeitsproben/freie-animationen/Veraenderung_PassenderKontext.gif");
+	background-image: url("pics/arbeitsproben/freie-animationen/Veraenderung_PassenderKontext.gif");
 	background-repeat: no-repeat;
 	background-size: auto;
 	background-position:  center;
@@ -175,8 +175,7 @@ header{
 @media screen and (min-width: 1920px) {
 	
 	#headerimage{
-		width: 100%;
-		height:30px;
 		background: center no-repeat url("pics/header_1600x100.jpg");
+		background-size: cover;
 	}
 }
