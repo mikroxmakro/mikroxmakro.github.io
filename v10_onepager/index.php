@@ -11,7 +11,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     </head>
     <body>
-    <div><img id="gototop" src="http://www.hummelbienchen.de/gfx/pfeil-01.png" alt="Menu" /></div>
+    <i id="gototop" class="fa fa-arrow-circle-up fa-4x" aria-hidden="true"></i>
     <?php include("header.php") ?>
     <div id="big_wrapper">
     	<div id="top"></div>   
@@ -30,13 +30,22 @@
         »Karmalove« hatte anfangs ein Interesse an einer Photoshop-Schulung und dann durch mangelde Zeit auf die klassische Projekt-Umsetzung umgestiegen. 
         »Kleines Kleid« hat dagegen zwei angestellte im Bereich Produktfotografie schulen lassen und die Sache selbst in die Hand genommen.</p> 
         
-        <div class="centerbox spaceup" style="width:50%;">
-        <i class="fa fa-bullhorn fa-5x"></i>
-        <i class="fa fa-comments-o fa-5x"></i>
+        <div class="centerbox spaceup" style="width:75%;">
+            <div style="width:140px;"><i class="fa fa-rocket fa-5x"></i><h2>Schnell</h2><h4>Schnelle und kostenfreie Beratung</h4></div>
+            <div style="width:140px;"><i class="fa fa-chain-broken fa-5x"></i><h2>Unverbindlich</h2><h4>Jede Anfrage ist volkommen unverbindlich</h4></div>
+            <div style="width:140px;"><i class="fa fa-envelope-o fa-5x"></i><h2>Einfach</h2><h4>Eine kurze Nachricht und los gehts</h4></div>
+
         </div>
         
-        </section>
         
+        </section>
+   
+    </div> <!-- Ende Big Wrapper-->
+         <?php include("kontaktseite.php") ?>
+        <div class="grey spaceup">
+        <?php include("impressum.php") ?>
+        </div>
+    
         <script language="javascript" type="text/javascript" src="lib/p5.js"></script>
 		<script language="javascript" type="text/javascript" src="lib/p5.dom.js"></script>
 		<script language="javascript" type="text/javascript" src="lib/p5.sound.js"></script>
@@ -44,6 +53,5 @@
         <!--<script language="javascript" type="text/javascript" src="p5-cvs2d.js"></script>-->
   		<script language="javascript" type="text/javascript" src="jquery-main.js"></script>
   		<script language="javascript" type="text/javascript" src="CarouselSlider.js"></script>
-    </div>
     </body>
 </html>
